@@ -37,8 +37,10 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  z-index: 9999;
   height: 15%;
-  width: 85%;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -52,6 +54,10 @@ body {
   height: auto;
   display: flex;
   min-width: 90px;
+}
+
+.navbar .logo {
+  margin-left: 5vw;
 }
 
 .logo_holder {
@@ -76,6 +82,7 @@ li {
 
 .navigation {
   color: aliceblue;
+  margin-right: 5vw;
 }
 
 .content {
@@ -188,9 +195,10 @@ button {
   font-size: 1vw;
   margin-bottom: 2%;
   margin-left: 2%;
-  transition: all 0.25s linear;
+  transition: all 0.15s linear;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .widget_button:hover {
@@ -207,7 +215,7 @@ button {
   height: 100%;
   background-color: gold;
   z-index: -1;
-  transition: transform 0.35s;
+  transition: transform 0.3s;
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
