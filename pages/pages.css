@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: GoldenFit;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  color: white;
+}
+
+:root {
+  --index: calc(1vw+1vh);
+}
+
+@font-face {
+  font-family: GoldenFit;
+  src: url(/Golden/HelveticaNeueBold.otf);
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  height: 15%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: GoldenFit;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-width: 90px;
+}
+
+.navbar .logo {
+  margin-left: 5vw;
+}
+
+.logo_holder {
+  width: 70%;
+  height: auto;
+  display: flex;
+  max-width: 120px;
+}
+
+.navbar ul {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 5vw;
+}
+
+li {
+  margin: auto;
+  margin: min(20px);
+}
+
+.navigation {
+  color: aliceblue;
+  margin-right: 0vw;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.navigation a {
+  transition: color 0.4s;
+}
+
+.navigation a:hover {
+  color: gold;
+}
+
+.content {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info {
+  width: 50%;
+  height: 100vh;
+}
+
+.main_hero {
+  width: 50%;
+  height: 100vh;
+  background-image: url(/Golden/img/boxing.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
