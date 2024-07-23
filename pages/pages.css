@@ -7,8 +7,11 @@
 }
 
 h1,
-p {
+p,
+li {
   color: white;
+  list-style: none;
+  text-wrap: balance;
 }
 
 :root {
@@ -90,17 +93,58 @@ li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 
 .info {
   width: 50%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  overflow-y: scroll;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.info::-webkit-scrollbar {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.div_with_brdr {
+  width: 80%;
+
+  display: flex;
+  justify-content: start;
+  gap: 5rem;
+  align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.div_with_brdr ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.contacts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .main_hero {
   width: 50%;
   height: 100vh;
-  background-image: url(/Golden/img/boxing.jpg);
+  background-image: url(/Golden/img/yoga.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
