@@ -35,3 +35,24 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", checkOpacityIn);
   checkSlideIn();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.querySelector(".menu");
+  const close = document.getElementById("close");
+  const content = document.getElementById("content");
+  const body = document.querySelector(".body");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.add("menu-active");
+    menu.classList.remove("menu-inactive");
+    body.classList.add("body-inactive");
+  });
+
+  close.addEventListener("click", () => {
+    content.style.display = "flex";
+    menu.classList.remove("menu-active");
+    menu.classList.add("menu-inactive");
+    body.classList.remove("body-inactive");
+  });
+});
