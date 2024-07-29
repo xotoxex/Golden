@@ -9,7 +9,23 @@
     <title>Golden Fit</title>
   </head>
   <body>
+    
     <div class="loader" id="loader"></div>
+    <div class="menu">
+      <div id="close"><i class="fa-solid fa-x"></i></div>
+      <ul nav_ul>
+        <li class="navigation"><a>HOME</a></li>
+        <li class="navigation"><a>TRAINERS</a></li>
+        <li class="navigation"><a>REGISTER</a></li>
+        <li class="navigation"><a>CONTACT</a></li>
+      </ul>
+      <div class="smedia">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
     <div class="main_container" id="main_container">
       <div  class="Main_Hero">
         <div class="navbar">
@@ -19,6 +35,11 @@
             <li class="navigation"><a>REGISTER</a></li>
             <li class="navigation"><a>LOGIN</a></li>
           </ul>
+          <div class="hamburger" id="hamburger">
+            <div class="ham"></div>
+            <div class="ham"></div>
+            <div class="ham"></div>
+          </div>
         </div>
         <div class="content">
           <small>welcome to your</small>
@@ -89,15 +110,6 @@
         </div>
       </div>
     </div>
-    <script>
-        window.addEventListener("DOMContentLoaded", () => {
-        const spinner = document.getElementById("loader");
-        const content = document.getElementById("main_container");
-
-        spinner.classList.add("hidden");
-        content.style.display = "block";
-      });
-
-    </script>
+  
   </body>
 </html>

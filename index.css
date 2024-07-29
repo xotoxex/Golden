@@ -4,6 +4,7 @@
   user-select: none;
   font-family: GoldenFit;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
@@ -36,10 +37,55 @@ body {
   position: relative;
 }
 
-.navbar {
+.menu {
+  width: 100%;
+  height: 100dvh;
+  padding: 20px;
   position: fixed;
   z-index: 9999;
-  height: 15%;
+  background: #dec479;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in;
+}
+
+#close {
+  color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#close i {
+  color: white;
+  font-size: 30px;
+  margin-right: 5vw;
+  margin-bottom: 0.2vh;
+  cursor: pointer;
+}
+
+.menu .smedia {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3vh;
+  font-size: 2rem;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 9998;
+  height: 15dvh;
   width: 100%;
   margin: auto;
   display: flex;
@@ -47,6 +93,25 @@ body {
   justify-content: space-between;
   font-family: GoldenFit;
   font-weight: bold;
+}
+
+.hamburger {
+  height: 4dvh;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  margin-right: 5vw;
+  cursor: pointer;
+}
+
+.ham {
+  width: 80%;
+  height: 0.8vh;
+  border-radius: 1dvh;
+  background-color: white;
 }
 
 .logo {
@@ -67,7 +132,7 @@ body {
   max-width: 120px;
 }
 
-.navbar ul {
+.nav_ul {
   width: 30%;
   display: flex;
   align-items: center;
@@ -367,6 +432,12 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
+  *::-webkit-scrollbar {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
   .content {
     top: 35%;
     font-size: 15px;
@@ -375,6 +446,27 @@ a {
   .navigation {
     display: none;
     cursor: pointer;
+  }
+
+  .menu .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh;
+    font-size: 2rem;
+  }
+
+  .menu-active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .menu-inactive {
+    transform: translateY(-100%);
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   #shortinfo {
