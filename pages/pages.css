@@ -34,7 +34,10 @@ body {
   padding: 20px;
   position: fixed;
   z-index: 9999;
-  background: #dec479;
+  background-image: url(/Golden/img/pexels-victorfreitas-949131.png);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;

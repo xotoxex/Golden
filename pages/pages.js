@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (elementTop2 < elementVisible) {
       element2.classList.add("main_hero-active");
 
-      window.removeEventListener("scroll", checkSlideIn); // Optional: stop listening after the first animation
+      window.removeEventListener("scroll", checkSlideIn);
     }
   };
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (elementTop2 < elementVisible) {
       element2.classList.add("main_hero-active");
 
-      window.removeEventListener("scroll", checkOpacityIn); // Optional: stop listening after the first animation
+      window.removeEventListener("scroll", checkOpacityIn);
     }
   };
 
