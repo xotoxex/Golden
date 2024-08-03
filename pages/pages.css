@@ -147,10 +147,14 @@ body {
 }
 
 .navigation {
-  color: aliceblue;
+  color: black;
   margin-right: 0vw;
   cursor: pointer;
   transition: color 0.4s;
+}
+
+.menu .navigation {
+  color: aliceblue;
 }
 
 .navigation a {
@@ -197,6 +201,12 @@ body {
   width: 0;
 }
 
+#infop {
+  width: 80%;
+  line-height: 30px;
+  color: rgb(221, 214, 214);
+}
+
 .div_with_brdr {
   width: 80%;
 
@@ -204,8 +214,8 @@ body {
   justify-content: start;
   gap: 5rem;
   align-items: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid rgb(221, 214, 214);
+  border-bottom: 1px solid rgb(221, 214, 214);
 }
 
 .div_with_brdr ul {
@@ -215,6 +225,7 @@ body {
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
+  color: rgb(221, 214, 214);
 }
 
 .contacts {
@@ -222,12 +233,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: rgb(221, 214, 214);
 }
 
 .main_hero {
   width: 50%;
   height: 100vh;
-  background-image: url(/Golden/img/yoga.jpg);
+  background-image: url(/Golden/img/yogah.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
