@@ -359,6 +359,18 @@ body {
     height: 100dvh;
   }
 
+  #infop {
+    width: 90%;
+  }
+
+  .trainer,
+  .regc {
+    width: 90%;
+  }
+
+  .div_with_brdr {
+    width: 90%;
+  }
   .main_hero {
     width: 90%;
   }
